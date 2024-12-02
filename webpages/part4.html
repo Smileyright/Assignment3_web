@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reservation Request</h1>
+    <div id="generalInfo">
+        <form>
+        <h3>General Information</h3>
+        <label for="arrivalDate">Arrival date: </label>
+        <input type="date" id="arrivalDate" name="arrivalDate"> <span id="date_err"></span><br><br>
+        <label for="nights">Nights: </label>
+        <input type="text" id="nights" name="nights"> <span id="nights_err"></span><br><br>
+        <label for="adults">Adults: </label>
+        <select id="adults" name="adults">
+            <option value="none">0</option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+        </select><br><br>
+        <label for="kids">Kids: </label>
+        <select id="kids" name="kids">
+            <option value="none">0</option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+        </select><br><br><br>
+    </div>
+    <div id="preferences">
+        <h3>Preferences</h3>
+        <label for="roomType">Room Type: </label>
+        <input type="radio" name="roomType" id="standard"> Standard
+        <input type="radio" name="roomType" id="Business"> Business
+        <input type="radio" name="roomType" id="Suite"> Suite <br><br>
+        <label for="bedType"> Bed Type: </label>
+        <input type="radio" name="bedType" id="double"> King
+        <input type="radio" name="bedType" id="double"> Double <br><br>
+        <input type="checkbox" name="smoking" id="smoking"> Smoking <br><br><br>
+    </div>
+    <div id="contactInfo">
+        <h3>Contact Information</h3>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name"><span id="name_err"></span><br><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email"><span id="email_err"></span><br><br>
+        <label for="phone">Phone: </label>
+        <input type="tel" name="phone" id="phone"><span id="phone_err"></span><br><br>
+    </div>
+    <input type="submit" id="submit" name="submit">
+        </form>
+    <script src="../js/part4.js"></script>
+</body>
+</html>
